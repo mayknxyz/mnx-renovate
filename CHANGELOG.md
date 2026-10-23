@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Evaluate the preset's `schedule` in `Asia/Manila` instead of UTC: the weekly
+  window is now 00:00–06:00 Monday Manila time (16:00–22:00 UTC Sunday),
+  not 08:00–14:00 Manila as before (MNXI-809)
+
 ## [0.1.0] - 2026-10-23
 
 ### Added
