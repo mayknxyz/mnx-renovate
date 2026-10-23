@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Shared Renovate preset for all mayknxyz, MNX-Ventures, Madali-LLC and optimified repos",
+  "extends": ["config:recommended", ":semanticCommits"],
+  "dependencyDashboard": false,
+  "schedule": ["before 6am on monday"],
+  "minimumReleaseAge": "7 days",
+  "packageRules": [
+    {
+      "description": "Group all minor and patch updates into one weekly PR",
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "non-major"
+    },
+    {
+      "description": "Majors get their own PR, labeled for review",
+      "matchUpdateTypes": ["major"],
+      "labels": ["major"]
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "schedule": ["at any time"]
+  }
+}
