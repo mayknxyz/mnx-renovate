@@ -35,3 +35,21 @@ Add rules after `extends` in that repo's `renovate.json`:
   ]
 }
 ```
+
+<!-- mks:init v0.33.0 start — managed by /mks:init. Edits inside are overwritten. -->
+
+## Development
+
+This repo uses [`mks`](https://github.com/MNX-Ventures/ult-kits), the team kit.
+Install it once per machine:
+
+```
+/plugin marketplace add MNX-Ventures/ult-kits
+/plugin install mks@ult-kits
+```
+
+Then `/mks:doctor` to check the setup. Work is tracked in Linear under the
+`mnx-renovate` project — GitHub Issues are off. Full setup, including git
+credentials: [ult-kits INSTALL.md](https://github.com/MNX-Ventures/ult-kits/blob/main/INSTALL.md).
+
+<!-- mks:init end -->
