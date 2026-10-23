@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "ult-kits": {
+      "source": { "source": "github", "repo": "MNX-Ventures/ult-kits" }
+    }
+  },
+  "enabledPlugins": {
+    "mks@ult-kits": true
+  }
+}
