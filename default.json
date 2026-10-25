@@ -4,6 +4,7 @@
   "extends": ["config:recommended", ":semanticCommits"],
   "dependencyDashboard": false,
   "schedule": ["before 6am on monday"],
+  "timezone": "Asia/Manila",
   "minimumReleaseAge": "7 days",
   "packageRules": [
     {
